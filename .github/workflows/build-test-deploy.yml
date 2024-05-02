@@ -1,12 +1,5 @@
 name: build-test-deploy
 on: push
-permissions:
-  contents: write
-  pages: write     
-  id-token: write
-env:
-  name: production
-  url: ${{ steps.deployment.outputs.page_url }}
 jobs: 
   build:
     runs-on: ubuntu-latest
