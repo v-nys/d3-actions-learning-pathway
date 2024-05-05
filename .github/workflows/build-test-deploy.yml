@@ -30,7 +30,7 @@ jobs:
     permissions:
       contents: write
       pages: write     
-      id-token: write
+      id-token: read
     environment:
       name: production
       url: ${{ steps.deployment.outputs.page_url }}
