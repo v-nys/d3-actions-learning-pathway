@@ -29,8 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: write     
-      id-token: read
+      pages: write
     environment:
       name: production
       url: ${{ steps.deployment.outputs.page_url }}
