@@ -28,8 +28,9 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       pages: write
+      id-token: write # OIDC token, expliciet vereist volgens actions/deploy-pages
     environment:
       name: production
       url: ${{ steps.deployment.outputs.page_url }}
